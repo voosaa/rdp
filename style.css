@@ -256,6 +256,26 @@ footer a:hover {
     color: var(--primary-color) !important;
 }
 
+/* Mobile Social Buttons */
+.mobile-social-buttons {
+    display: flex;
+    align-items: center;
+}
+
+.mobile-social-buttons .btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+
+.mobile-social-buttons .btn:hover {
+    transform: translateY(-3px);
+}
+
 /* Responsive Tweaks */
 @media (max-width: 991.98px) {
     .social-buttons {
@@ -268,6 +288,23 @@ footer a:hover {
     
     .hero-section {
         min-height: 70vh;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .mobile-social-buttons .btn {
+        width: 30px;
+        height: 30px;
+        font-size: 0.8rem;
+    }
+    
+    .navbar-brand img {
+        max-width: 130px;
+    }
+    
+    .navbar-toggler {
+        padding: 0.25rem 0.5rem;
+        font-size: 1rem;
     }
 }
 
