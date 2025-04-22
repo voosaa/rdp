@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://voosaa.github.io/rdp/sitemap.xml
+
+# Optimize crawl rate
+Crawl-delay: 10

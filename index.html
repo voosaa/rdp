@@ -2,7 +2,9 @@
 <html lang="nl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta name="format-detection" content="telephone=yes">
+    <meta name="theme-color" content="#28a745">
     <meta name="description" content="RDP Stukadoorsbedrijf: Uw expert in professioneel stucwerk in Valkenswaard en omgeving. Hoogwaardige afwerking van wanden en plafonds met jarenlange ervaring.">
     <meta name="keywords" content="stukadoor, stucwerk, pleisterwerk, Valkenswaard, RDP, wandafwerking, plafondafwerking">
     <meta name="author" content="RDP Stukadoorsbedrijf">
@@ -23,9 +25,15 @@
     <meta property="twitter:url" content="https://voosaa.github.io/rdp/">
     <meta property="twitter:title" content="RDP Stukadoorsbedrijf - Vakmanschap in Stucwerk">
     <meta property="twitter:description" content="Uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk. Betrouwbaar, vakkundig en met oog voor detail.">
-    <meta property="twitter:image" content="images/rdp-logo.png">
+    <meta property="twitter:image" content="images/rdplogo.png">
     
     <title>RDP Stukadoorsbedrijf - Vakmanschap in Stucwerk</title>
+    
+    <!-- Preconnect to external domains for faster loading -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -35,8 +43,71 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lightbox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="style.css">
+    <!-- Critical CSS inline for faster page rendering -->
+    <style>
+        /* Critical CSS for above-the-fold content */
+        :root {
+            --primary-color: #28a745;
+            --primary-dark: #218838;
+            --secondary-color: #343a40;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: #212529;
+            overflow-x: hidden;
+            margin: 0;
+        }
+        .navbar {
+            transition: all 0.4s ease;
+            padding: 0.5rem 1rem;
+            background-color: #fff !important;
+        }
+        .navbar-brand {
+            padding: 8px 0;
+            margin-right: 20px;
+            display: flex;
+            align-items: center;
+        }
+        .logo-img {
+            max-height: 70px;
+            width: auto;
+            display: block;
+            object-fit: contain;
+        }
+        .hero-section {
+            position: relative;
+            background: url('images/header-stucwerk.jpg') no-repeat center center/cover;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6);
+            z-index: 0;
+        }
+        .z-index-1 {
+            z-index: 1;
+        }
+        .text-shadow {
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .btn-success {
+            background-color: #28a745;
+            border-color: #28a745;
+        }
+        .btn-success:hover {
+            background-color: #218838;
+            border-color: #218838;
+        }
+    </style>
+    <!-- Non-critical CSS loaded asynchronously -->
+    <link rel="stylesheet" href="style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="style.css"></noscript>
     
     <!-- Structured Data for Local Business -->
     <script type="application/ld+json">
@@ -44,28 +115,163 @@
       "@context": "https://schema.org",
       "@type": "LocalBusiness",
       "name": "RDP Stukadoorsbedrijf",
-      "image": "images/rdp-logo.png",
+      "image": "images/rdplogo.png",
+      "description": "RDP Stukadoorsbedrijf is uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk, pleisterwerk en wandafwerking. Met jarenlange ervaring garanderen wij kwaliteit en betrouwbaarheid.",
+      "slogan": "Perfectie in Stucwerk",
+      "keywords": "stukadoor Valkenswaard, stucwerk, pleisterwerk, wandafwerking, RDP, stukadoorsbedrijf",
+      "logo": "images/rdplogo.png",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "Koperteutwei 7",
         "addressLocality": "Valkenswaard",
         "postalCode": "5551 PV",
-        "addressCountry": "NL"
+        "addressCountry": "NL",
+        "addressRegion": "Noord-Brabant"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "51.3520",
+        "longitude": "5.4577"
       },
       "telephone": "+31650204139",
       "email": "info@rdpstukadoorsbedrijf.nl",
       "url": "https://voosaa.github.io/rdp/",
       "priceRange": "$$",
-      "areaServed": ["Valkenswaard", "Dommelen", "Bergeijk"],
+      "areaServed": [
+        {
+          "@type": "City",
+          "name": "Valkenswaard"
+        },
+        {
+          "@type": "City",
+          "name": "Dommelen"
+        },
+        {
+          "@type": "City",
+          "name": "Bergeijk"
+        },
+        {
+          "@type": "City",
+          "name": "Riethoven"
+        },
+        {
+          "@type": "City",
+          "name": "Westerhoven"
+        },
+        {
+          "@type": "City",
+          "name": "Leende"
+        },
+        {
+          "@type": "City",
+          "name": "Heeze"
+        },
+        {
+          "@type": "City",
+          "name": "Waalre"
+        },
+        {
+          "@type": "City",
+          "name": "Eindhoven"
+        },
+        {
+          "@type": "City",
+          "name": "Veldhoven"
+        }
+      ],
       "openingHours": "Mo-Fr 08:00-18:00",
       "sameAs": [
         "https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613",
         "https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Stucwerk Diensten",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Traditioneel Stucwerk",
+              "description": "Glad en strak pleisterwerk voor wanden en plafonds, de perfecte basis voor elke afwerking."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Sausklaar Stucwerk",
+              "description": "Perfect gladde muren en plafonds, klaar om direct gesaust te worden."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Behangklaar Stucwerk",
+              "description": "Een strakke en egale ondergrond, ideaal voor behang."
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Reparatie Stucwerk",
+              "description": "Vakkundig herstel van beschadigd stucwerk aan muren en plafonds."
+            }
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <!-- FAQ Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "Hoe lang duurt het stucwerk van een gemiddelde woonkamer?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Voor een gemiddelde woonkamer duurt het stucwerk vaak 2-3 dagen. Dit omvat het voorbereiden van de wanden, het aanbrengen van het stucwerk, en voldoende droogtijd voor een perfect resultaat."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Wat is het verschil tussen sausklaar en behangklaar stucwerk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sausklaar stucwerk heeft een perfect gladde afwerking zonder oneffenheden, direct geschikt voor schilderwerk. Behangklaar stucwerk heeft een egale ondergrond maar hoeft niet volledig glad te zijn, aangezien eventuele kleine oneffenheden door het behang worden bedekt."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "In welke regio's is RDP Stukadoorsbedrijf actief?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "RDP Stukadoorsbedrijf is actief in Valkenswaard en de wijde omgeving, waaronder Dommelen, Bergeijk, Riethoven, Westerhoven, Leende, Heeze, Waalre, Eindhoven en Veldhoven."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Biedt RDP Stukadoorsbedrijf een garantie op het stucwerk?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Ja, wij geven garantie op al ons stucwerk. De exacte garantietermijn is afhankelijk van het type werk en wordt duidelijk vermeld in onze offerte."
+          }
+        }
       ]
     }
     </script>
 </head>
 <body>
+    <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-XXXXXXX"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
     <!-- Header -->
     <header class="sticky-top">
         <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
@@ -285,7 +491,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/Project 1.jpg" data-lightbox="portfolio-gallery" data-title="Strak Stucwerk Woonkamer">
-                                <img src="portfolio/Project 1.jpg" alt="Project 1 - Strak Stucwerk Woonkamer" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/Project 1.jpg" alt="Project 1 - Strak Stucwerk Woonkamer" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Strak Stucwerk Woonkamer</h3>
@@ -299,7 +505,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/project 2.jpg" data-lightbox="portfolio-gallery" data-title="Glad Pleisterwerk Plafond">
-                                <img src="portfolio/project 2.jpg" alt="Project 2 - Glad Pleisterwerk Plafond" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/project 2.jpg" alt="Project 2 - Glad Pleisterwerk Plafond" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Glad Pleisterwerk Plafond</h3>
@@ -313,7 +519,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/project 3.jpg" data-lightbox="portfolio-gallery" data-title="Decoratief Stucwerk">
-                                <img src="portfolio/project 3.jpg" alt="Project 3 - Decoratief Stucwerk" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/project 3.jpg" alt="Project 3 - Decoratief Stucwerk" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Decoratief Stucwerk</h3>
@@ -327,7 +533,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/project 4.jpeg" data-lightbox="portfolio-gallery" data-title="Renovatie Stucwerk">
-                                <img src="portfolio/project 4.jpeg" alt="Project 4 - Renovatie Stucwerk" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/project 4.jpeg" alt="Project 4 - Renovatie Stucwerk" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Renovatie Stucwerk</h3>
@@ -341,7 +547,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/project 5.jpeg" data-lightbox="portfolio-gallery" data-title="Stucwerk Nieuwbouw">
-                                <img src="portfolio/project 5.jpeg" alt="Project 5 - Stucwerk Nieuwbouw" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/project 5.jpeg" alt="Project 5 - Stucwerk Nieuwbouw" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Stucwerk Nieuwbouw</h3>
@@ -355,7 +561,7 @@
                     <div class="col-md-6 col-lg-4">
                         <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
                             <a href="portfolio/project 6.jpeg" data-lightbox="portfolio-gallery" data-title="Plafond Afwerking">
-                                <img src="portfolio/project 6.jpeg" alt="Project 6 - Plafond Afwerking" class="img-fluid portfolio-img w-100">
+                                <img src="portfolio/project 6.jpeg" alt="Project 6 - Plafond Afwerking" class="img-fluid portfolio-img w-100" loading="lazy">
                                 <div class="portfolio-overlay">
                                     <div class="portfolio-info">
                                         <h3 class="h6 text-white mb-0">Plafond Afwerking</h3>
@@ -634,50 +840,22 @@
             </div>
         </footer>
 
-        <!-- Bootstrap JS -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-        <!-- Lightbox JS -->
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
-        <!-- Custom JS -->
-        <script>
-            // Set current year in footer
-            document.getElementById('year').textContent = new Date().getFullYear();
-            
-            // Active nav link
-            document.addEventListener('DOMContentLoaded', function() {
-                const sections = document.querySelectorAll('section');
-                const navLinks = document.querySelectorAll('.nav-link');
-                
-                window.addEventListener('scroll', function() {
-                    let current = '';
-                    
-                    sections.forEach(section => {
-                        const sectionTop = section.offsetTop;
-                        const sectionHeight = section.clientHeight;
-                        
-                        if (pageYOffset >= (sectionTop - 200)) {
-                            current = section.getAttribute('id');
-                        }
-                    });
-                    
-                    navLinks.forEach(link => {
-                        link.classList.remove('active');
-                        if (link.getAttribute('href').substring(1) === current) {
-                            link.classList.add('active');
-                        }
-                    });
-                });
-            });
-            
-            // Form submission placeholder (to be replaced with actual form handling)
-            const contactForm = document.getElementById('contactForm');
-            if (contactForm) {
-                contactForm.addEventListener('submit', function(e) {
-                    e.preventDefault();
-                    alert('Bedankt voor uw bericht! We nemen zo spoedig mogelijk contact met u op.');
-                    contactForm.reset();
-                });
-            }
-        </script>
+        <!-- Optimized Script Loading -->        
+        <!-- Bootstrap JS - defer loading to improve page performance -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" defer></script>
+        
+        <!-- Lightbox JS - defer loading since it's not needed for initial render -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js" defer></script>
+        
+        <!-- Minified and optimized custom JS -->
+        <script src="js/main.min.js" defer></script>
+        
+        <!-- Google Tag Manager -->
+        <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-XXXXXXX');</script>
+        <!-- End Google Tag Manager -->
     </body>
 </html>
