@@ -1,4 +1,9 @@
 /* Basic Reset & Defaults (Mobile First) */
+:root {
+    --primary-color: #007bff; /* A standard blue */
+    --secondary-color: #343a40; /* A dark grey */
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -98,11 +103,27 @@ header .container {
     width: 90%;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center; /* Vertically align items within the logo container */
+}
+
+.logo-image {
+    max-height: 50px; /* Limit the logo height */
+    width: auto; /* Maintain aspect ratio */
+}
+
 .logo {
     font-size: 1.6em;
     font-weight: bold;
     color: var(--secondary-color);
     margin-bottom: 10px; /* Space between logo and nav on mobile */
+    display: block; /* Make links take full width for easier tapping */
+    text-align: center;
+}
+
+.header-cta-buttons {
+    display: none; /* Hide on mobile by default */
 }
 
 nav ul {
@@ -134,7 +155,7 @@ nav ul li a.active {
 
 /* Hero Section (Mobile First) */
 #hero {
-    background: url('images/hero-background.jpg') no-repeat center center/cover; /* Ensure you have a background image */
+    background: url('images/header-stucwerk.jpg') no-repeat center center/cover; /* Ensure you have a background image */
     color: #fff;
     text-align: center;
     padding: 80px 20px; /* More padding for impact */
@@ -569,7 +590,7 @@ footer p {
 
     /* Header padding */
      header {
-        padding: 20px 0; /* More header padding */
+        padding: 15px 0; /* Reduced header padding from 20px */
      }
 
     nav ul li {
@@ -597,6 +618,13 @@ footer p {
      #contact .container {
          padding: 100px 0; /* Ensure contact section also gets more padding */
      }
+
+    /* Show and style header CTA buttons on desktop */
+    .header-cta-buttons {
+        display: flex; /* Arrange buttons horizontally */
+        align-items: center; /* Vertically align buttons */
+        gap: 10px; /* Space between buttons */
+    }
 }
 
 /* Lightbox Specific Styles (Keep as is or adjust if needed) */
