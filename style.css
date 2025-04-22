@@ -66,12 +66,12 @@ img {
 
 .cta-button {
     display: inline-block;
-    background-color: var(--primary-color);
+    background-color: #28a745; /* Green background */
     color: #fff;
-    padding: 12px 25px;
+    padding: 10px 20px; /* Reduced padding */
     border: none;
     border-radius: 5px;
-    font-size: 1em; /* Base size */
+    font-size: 0.95em; /* Slightly smaller font */
     font-weight: bold;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -80,7 +80,7 @@ img {
 }
 
 .cta-button:hover {
-    background-color: #0056b3;
+    background-color: #218838; /* Darker green on hover */
     transform: translateY(-2px);
 }
 
