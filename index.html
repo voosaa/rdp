@@ -3,247 +3,677 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="RDP Stukadoorsbedrijf: Uw expert in professioneel stucwerk in Valkenswaard en omgeving. Hoogwaardige afwerking van wanden en plafonds met jarenlange ervaring.">
+    <meta name="keywords" content="stukadoor, stucwerk, pleisterwerk, Valkenswaard, RDP, wandafwerking, plafondafwerking">
+    <meta name="author" content="RDP Stukadoorsbedrijf">
+    <meta name="robots" content="index, follow">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://voosaa.github.io/rdp/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://voosaa.github.io/rdp/">
+    <meta property="og:title" content="RDP Stukadoorsbedrijf - Vakmanschap in Stucwerk">
+    <meta property="og:description" content="Uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk. Betrouwbaar, vakkundig en met oog voor detail.">
+    <meta property="og:image" content="images/rdp-logo.png">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://voosaa.github.io/rdp/">
+    <meta property="twitter:title" content="RDP Stukadoorsbedrijf - Vakmanschap in Stucwerk">
+    <meta property="twitter:description" content="Uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk. Betrouwbaar, vakkundig en met oog voor detail.">
+    <meta property="twitter:image" content="images/rdp-logo.png">
+    
     <title>RDP Stukadoorsbedrijf - Vakmanschap in Stucwerk</title>
-    <meta name="description" content="RDP Stukadoorsbedrijf: Uw expert in professioneel stucwerk in Valkenswaard en omgeving. Vraag vrijblijvend een offerte aan voor hoogwaardige afwerking.">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css">
+    <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/css/lightbox.min.css" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY99VNtzibhlGu4cvB/MgyYoSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <!-- Structured Data for Local Business -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LocalBusiness",
+      "name": "RDP Stukadoorsbedrijf",
+      "image": "images/rdp-logo.png",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Koperteutwei 7",
+        "addressLocality": "Valkenswaard",
+        "postalCode": "5551 PV",
+        "addressCountry": "NL"
+      },
+      "telephone": "+31650204139",
+      "email": "info@rdpstukadoorsbedrijf.nl",
+      "url": "https://voosaa.github.io/rdp/",
+      "priceRange": "$$",
+      "areaServed": ["Valkenswaard", "Dommelen", "Bergeijk"],
+      "openingHours": "Mo-Fr 08:00-18:00",
+      "sameAs": [
+        "https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613",
+        "https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews"
+      ]
+    }
+    </script>
 </head>
 <body>
-
-    <header>
-        <div class="container">
-            <div class="logo-container">
-                <img src="images/95e743a4-9546-4b49-8ebf-2689513f0b75.png" alt="RDP Stukadoorsbedrijf Logo" class="logo-image">
+    <!-- Header -->
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
+            <div class="container">
+                <a class="navbar-brand" href="#hero">
+                    <img src="images/rdp-logo.png" alt="RDP Stukadoorsbedrijf Logo" class="logo-img" width="160" height="60">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#hero">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#diensten">Diensten</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#over-ons">Over Ons</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#reviews">Recensies</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex social-buttons ms-lg-3">
+                        <a href="https://wa.me/31650204139" class="btn btn-sm btn-outline-success me-2" target="_blank" aria-label="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613" class="btn btn-sm btn-outline-primary me-2" target="_blank" aria-label="Facebook">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews" class="btn btn-sm btn-outline-danger" target="_blank" aria-label="Google Reviews">
+                            <i class="fab fa-google"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <button class="nav-toggle" aria-label="Toggle navigation">
-                &#9776;
-            </button>
-            <nav>
-                <ul class="nav-menu">
-                    <li><a href="#hero">Home</a></li>
-                    <li><a href="#diensten">Diensten</a></li>
-                    <li><a href="#over-ons">Over Ons</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#reviews">Recensies</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-            <div class="header-cta-buttons">
-                <a href="https://wa.me/31650204139" class="cta-button whatsapp" target="_blank">WhatsApp</a>
-                <a href="https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613" class="cta-button facebook" target="_blank">Facebook</a>
-                <a href="https://www.google.nl/search?sca_esv=a24eb7beebb63ee4&sxsrf=AHTn8zqeFynaPLdZvQeNBLMDvtl6ER-qfw:1745335901969&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzZpjRfFSRDCQfAXt2lyBnbC5qRFLVRs_3P3XqCxBXnmUiU7LbL5yyJX5-omVszUsF-LBgkWIJ3eHI4CHMz85Oehb6n8V0V-7iwZwXDBmexsAZGKyHGuyGoGOgAOTa3mEU53FIzc%3D&q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews&sa=X&ved=2ahUKEwj6ks3z-uuMAxW1gf0HHYjKOa8Q0bkNegQIPRAE&biw=1920&bih=919&dpr=1" class="cta-button google-reviews" target="_blank">Reviews</a>
-            </div>
-        </div>
+        </nav>
     </header>
 
     <main>
-        <section id="hero" class="hero">
-            <div class="container">
-                <h1>RDP Stukadoorsbedrijf: Perfectie in Stucwerk</h1>
-                <p>Uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk. Betrouwbaar, vakkundig en met oog voor detail.</p>
-                <a href="#contact" class="cta-button">Vraag Nu Uw Offerte Aan</a>
-            </div>
-        </section>
-
-        <section id="diensten" class="container">
-            <h2>Onze Diensten</h2>
-            <div class="services-grid">
-                <div class="service-item">
-                    <span class="icon-placeholder">✨</span>
-                    <h3>Traditioneel Stucwerk</h3>
-                    <p>Glad en strak pleisterwerk voor wanden en plafonds, de perfecte basis voor elke afwerking.</p>
-                    <a href="#contact">Meer Info & Offerte</a>
-                </div>
-                <div class="service-item">
-                    <span class="icon-placeholder">🖌️</span>
-                    <h3>Sausklaar Stucwerk</h3>
-                    <p>Perfect gladde muren en plafonds, klaar om direct gesaust te worden.</p>
-                    <a href="#contact">Meer Info & Offerte</a>
-                </div>
-                <div class="service-item">
-                    <span class="icon-placeholder">🧱</span>
-                    <h3>Behangklaar Stucwerk</h3>
-                    <p>Een strakke en egale ondergrond, ideaal voor behang.</p>
-                    <a href="#contact">Meer Info & Offerte</a>
-                </div>
-                 <div class="service-item">
-                    <span class="icon-placeholder">🔧</span>
-                    <h3>Reparatie Stucwerk</h3>
-                    <p>Vakkundig herstel van beschadigd stucwerk aan muren en plafonds.</p>
-                    <a href="#contact">Meer Info & Offerte</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="over-ons" class="container why-us">
-            <h2>Waarom Kiezen Voor RDP Stukadoorsbedrijf?</h2>
-            <div class="center-text intro-paragraph">
-                <p>Met passie voor het vak leveren wij stucwerk van topkwaliteit in Valkenswaard en omstreken.</p>
-            </div>
-            <div class="why-us-grid"> 
-                <div class="why-us-item">
-                    <span class="icon">⭐</span> 
-                    <div>
-                        <h3>Ervaren & Vakkundig</h3>
-                        <p>Jarenlange ervaring staat garant voor topkwaliteit stucwerk.</p> 
-                    </div>
-                </div>
-                <div class="why-us-item">
-                    <span class="icon">🏆</span> 
-                    <div>
-                        <h3>Kwaliteitsmaterialen</h3>
-                        <p>Wij werken enkel met de beste materialen voor een duurzaam resultaat.</p>
-                    </div>
-                </div>
-                <div class="why-us-item">
-                    <span class="icon">🤝</span> 
-                    <div>
-                        <h3>Duidelijke Communicatie</h3>
-                        <p>Heldere afspraken en communicatie gedurende het hele project.</p>
-                    </div>
-                </div>
-                <div class="why-us-item">
-                    <span class="icon">💰</span> 
-                    <div>
-                        <h3>Gratis Offerte</h3>
-                        <p>Ontvang een vrijblijvende en transparante offerte op maat.</p>
-                    </div>
-                </div>
-                <div class="why-us-item">
-                    <span class="icon">😊</span> 
-                    <div>
-                        <h3>Klanttevredenheid</h3>
-                        <p>Uw tevredenheid staat bij ons voorop, van begin tot eind.</p>
-                    </div>
-                </div>
-                 <div class="why-us-item">
-                    <span class="icon">📍</span> 
-                    <div>
-                        <h3>Regionaal Actief</h3>
-                        <p>Uw lokale stukadoor in Valkenswaard en de directe omgeving.</p>
-                    </div>
-                </div>
-            </div>
-            <div class="center-text">
-                 <a href="#contact" class="cta-button">Neem Contact Op</a>
-            </div>
-        </section>
-
-        <section id="portfolio">
-            <div class="container">
-                <h2>Bekijk Ons Werk</h2>
-                <p class="center-text">Een selectie van recent opgeleverde projecten.</p>
-                <div class="portfolio-grid">
-                    <div class="portfolio-item">
-                        <a href="portfolio/Project 1.jpg" data-lightbox="portfolio-gallery" data-title="Strak Stucwerk Woonkamer">
-                            <img src="portfolio/Project 1.jpg" alt="Project 1 - Strak Stucwerk Woonkamer">
-                        </a>
-                        <p>Strak Stucwerk Woonkamer</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="portfolio/project 2.jpg" data-lightbox="portfolio-gallery" data-title="Glad Pleisterwerk Plafond">
-                            <img src="portfolio/project 2.jpg" alt="Project 2 - Glad Pleisterwerk Plafond">
-                        </a>
-                        <p>Glad Pleisterwerk Plafond</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="portfolio/project 3.jpg" data-lightbox="portfolio-gallery" data-title="Decoratief Stucwerk">
-                            <img src="portfolio/project 3.jpg" alt="Project 3 - Decoratief Stucwerk">
-                        </a>
-                        <p>Decoratief Stucwerk</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="portfolio/project 4.jpeg" data-lightbox="portfolio-gallery" data-title="Renovatie Stucwerk">
-                            <img src="portfolio/project 4.jpeg" alt="Project 4 - Renovatie Stucwerk">
-                        </a>
-                        <p>Renovatie Stucwerk</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="portfolio/project 5.jpeg" data-lightbox="portfolio-gallery" data-title="Stucwerk Nieuwbouw">
-                            <img src="portfolio/project 5.jpeg" alt="Project 5 - Stucwerk Nieuwbouw">
-                        </a>
-                        <p>Stucwerk Nieuwbouw</p>
-                    </div>
-                    <div class="portfolio-item">
-                        <a href="portfolio/project 6.jpeg" data-lightbox="portfolio-gallery" data-title="Plafond Afwerking">
-                            <img src="portfolio/project 6.jpeg" alt="Project 6 - Plafond Afwerking">
-                        </a>
-                        <p>Plafond Afwerking</p>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section d-flex align-items-center text-white position-relative">
+            <div class="hero-overlay"></div>
+            <div class="container position-relative z-index-1 py-5">
+                <div class="row justify-content-center text-center">
+                    <div class="col-lg-8">
+                        <h1 class="display-4 fw-bold mb-3 text-shadow">RDP Stukadoorsbedrijf: Perfectie in Stucwerk</h1>
+                        <p class="lead mb-4 text-shadow">Uw specialist in Valkenswaard en omgeving voor hoogwaardig stucwerk. Betrouwbaar, vakkundig en met oog voor detail.</p>
+                        <a href="#contact" class="btn btn-success btn-lg px-4 py-3 rounded-pill fw-bold">Vrijblijvende Offerte Aanvragen</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="reviews" class="container">
-            <h2>Wat Klanten Zeggen</h2>
-            <p class="center-text">Wij zijn trots op de tevredenheid van onze klanten! Lees hun ervaringen rechtstreeks op Google.</p> 
-            
-            <div class="reviews-grid">
-                <div class="review-item">
-                    <blockquote>"Zeer tevreden over het stucwerk van RDP! Werkt netjes en het resultaat is top."</blockquote>
-                    <cite>- Klant uit Valkenswaard</cite>
+        <!-- Services Section -->
+        <section id="diensten" class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold section-title">Onze Diensten</h2>
+                        <div class="divider mx-auto"></div>
+                    </div>
                 </div>
-                <div class="review-item">
-                    <blockquote>"Professioneel en betrouwbaar. Onze muren zien er weer fantastisch uit dankzij RDP."</blockquote>
-                    <cite>- Klant uit Dommelen</cite>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card h-100 shadow-sm rounded p-4 bg-white transition">
+                            <div class="service-icon mb-3 text-success">
+                                <i class="fas fa-star fa-2x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Traditioneel Stucwerk</h3>
+                            <p class="text-muted mb-3">Glad en strak pleisterwerk voor wanden en plafonds, de perfecte basis voor elke afwerking.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-success stretched-link">Meer Info & Offerte</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card h-100 shadow-sm rounded p-4 bg-white transition">
+                            <div class="service-icon mb-3 text-success">
+                                <i class="fas fa-paint-roller fa-2x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Sausklaar Stucwerk</h3>
+                            <p class="text-muted mb-3">Perfect gladde muren en plafonds, klaar om direct gesaust te worden.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-success stretched-link">Meer Info & Offerte</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card h-100 shadow-sm rounded p-4 bg-white transition">
+                            <div class="service-icon mb-3 text-success">
+                                <i class="fas fa-scroll fa-2x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Behangklaar Stucwerk</h3>
+                            <p class="text-muted mb-3">Een strakke en egale ondergrond, ideaal voor behang.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-success stretched-link">Meer Info & Offerte</a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-3">
+                        <div class="service-card h-100 shadow-sm rounded p-4 bg-white transition">
+                            <div class="service-icon mb-3 text-success">
+                                <i class="fas fa-tools fa-2x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Reparatie Stucwerk</h3>
+                            <p class="text-muted mb-3">Vakkundig herstel van beschadigd stucwerk aan muren en plafonds.</p>
+                            <a href="#contact" class="btn btn-sm btn-outline-success stretched-link">Meer Info & Offerte</a>
+                        </div>
+                    </div>
                 </div>
-                 <div class="review-item">
-                    <blockquote>"Goede service en vakmanschap. Een aanrader voor iedereen die een goede stukadoor zoekt."</blockquote>
-                    <cite>- Klant uit Bergeijk</cite>
-                </div>
-                <!-- Add more reviews or a link to a reviews page -->
-            </div>
-
-             <div class="center-text">
-                <a href="https://www.google.nl/search?sca_esv=a24eb7beebb63ee4&sxsrf=AHTn8zqeFynaPLdZvQeNBLMDvtl6ER-qfw:1745335901969&si=APYL9bs7Hg2KMLB-4tSoTdxuOx8BdRvHbByC_AuVpNyh0x2KzZpjRfFSRDCQfAXt2lyBnbC5qRFLVRs_3P3XqCxBXnmUiU7LbL5yyJX5-omVszUsF-LBgkWIJ3eHI4CHMz85Oehb6n8V0V-7iwZwXDBmexsAZGKyHGuyGoGOgAOTa3mEU53FIzc%3D&q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews&sa=X&ved=2ahUKEwj6ks3z-uuMAxW1gf0HHYjKOa8Q0bkNegQIPRAE&biw=1920&bih=919&dpr=1" class="cta-button" target="_blank">Bekijk Onze Google Reviews</a> 
             </div>
         </section>
 
-        <section id="contact" class="container">
-            <h2>Neem Contact Op Voor Een Vrijblijvende Offerte</h2>
-            <p class="center-text">Heeft u vragen of wilt u direct een offerte aanvragen? Vul het onderstaande formulier in of neem direct contact met ons op.</p>
-
-            <form class="contact-form" action="#" method="post">
-                <label for="name">Naam:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="phone">Telefoonnummer:</label>
-                <input type="tel" id="phone" name="phone">
-
-                 <label for="service">Gewenste Dienst:</label>
-                <select id="service" name="service">
-                    <option value="">-- Selecteer een dienst --</option>
-                    <option value="traditioneel">Traditioneel Stucwerk</option>
-                    <option value="sausklaar">Sausklaar Stucwerk</option>
-                    <option value="behangklaar">Behangklaar Stucwerk</option>
-                    <option value="reparatie">Reparatie Stucwerk</option>
-                    <option value="anders">Anders / Vraag</option>
-                </select>
-
-                <label for="message">Bericht:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit" class="cta-button">Verstuur Aanvraag</button>
-            </form>
-
+        <!-- Why Choose Us Section -->
+        <section id="over-ons" class="py-5">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold section-title">Waarom Kiezen Voor RDP Stukadoorsbedrijf?</h2>
+                        <div class="divider mx-auto"></div>
+                        <p class="lead text-muted mt-3">Met passie voor het vak leveren wij stucwerk van topkwaliteit in Valkenswaard en omstreken.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-medal fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Ervaren & Vakkundig</h3>
+                            <p class="text-muted">Jarenlange ervaring staat garant voor topkwaliteit stucwerk.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-trophy fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Kwaliteitsmaterialen</h3>
+                            <p class="text-muted">Wij werken enkel met de beste materialen voor een duurzaam resultaat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-comments fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Duidelijke Communicatie</h3>
+                            <p class="text-muted">Heldere afspraken en communicatie gedurende het hele project.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-euro-sign fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Gratis Offerte</h3>
+                            <p class="text-muted">Ontvang een vrijblijvende en transparante offerte op maat.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-smile fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Klanttevredenheid</h3>
+                            <p class="text-muted">Uw tevredenheid staat bij ons voorop, van begin tot eind.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="feature-card h-100 p-4 rounded transition">
+                            <div class="feature-icon text-success mb-3">
+                                <i class="fas fa-map-marker-alt fa-3x"></i>
+                            </div>
+                            <h3 class="h5 fw-bold">Regionaal Actief</h3>
+                            <p class="text-muted">Uw lokale stukadoor in Valkenswaard en de directe omgeving.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="#contact" class="btn btn-success btn-lg px-4 py-2 rounded-pill">Neem Contact Op</a>
+                </div>
+            </div>
         </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <div class="footer-contact">
-                 <p><strong>RDP Stukadoorsbedrijf</strong></p>
-                 <p>Koperteutwei 7, 5551 PV Valkenswaard</p>
+        <!-- Portfolio Section -->
+        <section id="portfolio" class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold section-title">Bekijk Ons Werk</h2>
+                        <div class="divider mx-auto"></div>
+                        <p class="lead text-muted mt-3">Een selectie van recent opgeleverde projecten.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/Project 1.jpg" data-lightbox="portfolio-gallery" data-title="Strak Stucwerk Woonkamer">
+                                <img src="portfolio/Project 1.jpg" alt="Project 1 - Strak Stucwerk Woonkamer" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Strak Stucwerk Woonkamer</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/project 2.jpg" data-lightbox="portfolio-gallery" data-title="Glad Pleisterwerk Plafond">
+                                <img src="portfolio/project 2.jpg" alt="Project 2 - Glad Pleisterwerk Plafond" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Glad Pleisterwerk Plafond</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/project 3.jpg" data-lightbox="portfolio-gallery" data-title="Decoratief Stucwerk">
+                                <img src="portfolio/project 3.jpg" alt="Project 3 - Decoratief Stucwerk" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Decoratief Stucwerk</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/project 4.jpeg" data-lightbox="portfolio-gallery" data-title="Renovatie Stucwerk">
+                                <img src="portfolio/project 4.jpeg" alt="Project 4 - Renovatie Stucwerk" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Renovatie Stucwerk</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/project 5.jpeg" data-lightbox="portfolio-gallery" data-title="Stucwerk Nieuwbouw">
+                                <img src="portfolio/project 5.jpeg" alt="Project 5 - Stucwerk Nieuwbouw" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Stucwerk Nieuwbouw</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4">
+                        <div class="portfolio-card rounded shadow-sm overflow-hidden position-relative">
+                            <a href="portfolio/project 6.jpeg" data-lightbox="portfolio-gallery" data-title="Plafond Afwerking">
+                                <img src="portfolio/project 6.jpeg" alt="Project 6 - Plafond Afwerking" class="img-fluid portfolio-img w-100">
+                                <div class="portfolio-overlay">
+                                    <div class="portfolio-info">
+                                        <h3 class="h6 text-white mb-0">Plafond Afwerking</h3>
+                                        <span class="text-white-50 small"><i class="fas fa-search-plus me-1"></i>Bekijk groter</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <p>&copy; <span id="year"></span> RDP Stukadoorsbedrijf. Alle rechten voorbehouden.</p>
-            <p><a href="#">Privacybeleid</a> | <a href="#">Algemene Voorwaarden</a></p>
-        </div>
-    </footer>
+        </section>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js" integrity="sha512-ZKX+BvQihRJPA8CROKBhDNvoc2aDMOdAlcm7TUQY+35XYtrd3yh95QOOhsPDQY99VNtzibhlGu4cvB/MgyYoSQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="script.js"></script>
-</body>
+        <!-- Reviews Section -->
+        <section id="reviews" class="py-5">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold section-title">Wat Klanten Zeggen</h2>
+                        <div class="divider mx-auto"></div>
+                        <p class="lead text-muted mt-3">Wij zijn trots op de tevredenheid van onze klanten!</p>
+                    </div>
+                </div>
+                
+                <div class="row g-4">
+                    <div class="col-md-4">
+                        <div class="testimonial-card h-100 p-4 shadow-sm rounded bg-white">
+                            <div class="testimonial-icon text-success mb-3">
+                                <i class="fas fa-quote-left fa-2x"></i>
+                            </div>
+                            <blockquote class="blockquote mb-3">
+                                <p class="fst-italic text-muted">"Zeer tevreden over het stucwerk van RDP! Werkt netjes en het resultaat is top."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                <strong>Klant uit Valkenswaard</strong>
+                            </figcaption>
+                            <div class="testimonial-rating text-warning mt-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="testimonial-card h-100 p-4 shadow-sm rounded bg-white">
+                            <div class="testimonial-icon text-success mb-3">
+                                <i class="fas fa-quote-left fa-2x"></i>
+                            </div>
+                            <blockquote class="blockquote mb-3">
+                                <p class="fst-italic text-muted">"Professioneel en betrouwbaar. Onze muren zien er weer fantastisch uit dankzij RDP."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                <strong>Klant uit Dommelen</strong>
+                            </figcaption>
+                            <div class="testimonial-rating text-warning mt-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-4">
+                        <div class="testimonial-card h-100 p-4 shadow-sm rounded bg-white">
+                            <div class="testimonial-icon text-success mb-3">
+                                <i class="fas fa-quote-left fa-2x"></i>
+                            </div>
+                            <blockquote class="blockquote mb-3">
+                                <p class="fst-italic text-muted">"Goede service en vakmanschap. Een aanrader voor iedereen die een goede stukadoor zoekt."</p>
+                            </blockquote>
+                            <figcaption class="blockquote-footer mt-2">
+                                <strong>Klant uit Bergeijk</strong>
+                            </figcaption>
+                            <div class="testimonial-rating text-warning mt-2">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="text-center mt-5">
+                    <a href="https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews" class="btn btn-success btn-lg px-4 py-2 rounded-pill" target="_blank">Bekijk Onze Google Reviews <i class="fas fa-external-link-alt ms-2"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="py-5 bg-light">
+            <div class="container py-4">
+                <div class="row text-center mb-5">
+                    <div class="col-lg-8 mx-auto">
+                        <h2 class="display-5 fw-bold section-title">Neem Contact Op</h2>
+                        <div class="divider mx-auto"></div>
+                        <p class="lead text-muted mt-3">Heeft u vragen of wilt u direct een offerte aanvragen? Vul het onderstaande formulier in of neem direct contact met ons op.</p>
+                    </div>
+                </div>
+                
+                <div class="row g-5">
+                    <div class="col-lg-5">
+                        <div class="contact-info p-4 shadow-sm rounded bg-white h-100">
+                            <h3 class="h4 fw-bold mb-4">Contactgegevens</h3>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="contact-icon bg-success-subtle p-3 rounded me-3">
+                                    <i class="fas fa-map-marker-alt text-success"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold">Adres</h4>
+                                    <p class="text-muted">Koperteutwei 7, 5551 PV Valkenswaard</p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="contact-icon bg-success-subtle p-3 rounded me-3">
+                                    <i class="fas fa-phone text-success"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold">Telefoon</h4>
+                                    <p class="text-muted"><a href="tel:+31650204139" class="text-decoration-none">+31 6 5020 4139</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex mb-4">
+                                <div class="contact-icon bg-success-subtle p-3 rounded me-3">
+                                    <i class="fas fa-envelope text-success"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold">Email</h4>
+                                    <p class="text-muted"><a href="mailto:info@rdpstukadoorsbedrijf.nl" class="text-decoration-none">info@rdpstukadoorsbedrijf.nl</a></p>
+                                </div>
+                            </div>
+                            
+                            <div class="d-flex">
+                                <div class="contact-icon bg-success-subtle p-3 rounded me-3">
+                                    <i class="fas fa-clock text-success"></i>
+                                </div>
+                                <div>
+                                    <h4 class="h6 fw-bold">Openingstijden</h4>
+                                    <p class="text-muted">Maandag - Vrijdag: 08:00 - 18:00</p>
+                                </div>
+                            </div>
+                            
+                            <div class="social-links mt-5">
+                                <a href="https://wa.me/31650204139" class="btn btn-success me-2" target="_blank" aria-label="WhatsApp">
+                                    <i class="fab fa-whatsapp"></i>
+                                </a>
+                                <a href="https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613" class="btn btn-primary me-2" target="_blank" aria-label="Facebook">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                                <a href="https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews" class="btn btn-danger" target="_blank" aria-label="Google Reviews">
+                                    <i class="fab fa-google"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-7">
+                        <div class="contact-form p-4 shadow-sm rounded bg-white">
+                            <form id="contactForm" action="#" method="post">
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="text" class="form-control" id="name" name="name" placeholder="Naam" required>
+                                            <label for="name">Naam</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                                            <label for="email">Email</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="row g-3">
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <input type="tel" class="form-control" id="phone" name="phone" placeholder="Telefoonnummer">
+                                            <label for="phone">Telefoonnummer</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-floating mb-3">
+                                            <select class="form-select" id="service" name="service">
+                                                <option value="" selected>-- Selecteer een dienst --</option>
+                                                <option value="traditioneel">Traditioneel Stucwerk</option>
+                                                <option value="sausklaar">Sausklaar Stucwerk</option>
+                                                <option value="behangklaar">Behangklaar Stucwerk</option>
+                                                <option value="reparatie">Reparatie Stucwerk</option>
+                                                <option value="anders">Anders / Vraag</option>
+                                            </select>
+                                            <label for="service">Gewenste Dienst</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-floating mb-3">
+                                    <textarea class="form-control" id="message" name="message" style="height: 150px" placeholder="Bericht" required></textarea>
+                                    <label for="message">Bericht</label>
+                                </div>
+                                
+                                <div class="text-end">
+                                    <button type="submit" class="btn btn-success btn-lg px-4 py-2">
+                                        <i class="fas fa-paper-plane me-2"></i> Verstuur Aanvraag
+                                    </button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="bg-dark text-white py-5">
+            <div class="container">
+                <div class="row g-4">
+                    <div class="col-lg-4">
+                        <h3 class="h5 fw-bold mb-3">RDP Stukadoorsbedrijf</h3>
+                        <p class="mb-1">Koperteutwei 7</p>
+                        <p class="mb-1">5551 PV Valkenswaard</p>
+                        <p class="mb-3">KVK: XXXXXXXX</p>
+                        <p class="mb-0"><a href="tel:+31650204139" class="text-white text-decoration-none">+31 6 5020 4139</a></p>
+                        <p><a href="mailto:info@rdpstukadoorsbedrijf.nl" class="text-white text-decoration-none">info@rdpstukadoorsbedrijf.nl</a></p>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h3 class="h5 fw-bold mb-3">Quick Links</h3>
+                        <ul class="list-unstyled">
+                            <li class="mb-2"><a href="#hero" class="text-white text-decoration-none">Home</a></li>
+                            <li class="mb-2"><a href="#diensten" class="text-white text-decoration-none">Diensten</a></li>
+                            <li class="mb-2"><a href="#over-ons" class="text-white text-decoration-none">Over Ons</a></li>
+                            <li class="mb-2"><a href="#portfolio" class="text-white text-decoration-none">Portfolio</a></li>
+                            <li class="mb-2"><a href="#reviews" class="text-white text-decoration-none">Recensies</a></li>
+                            <li class="mb-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="col-lg-4">
+                        <h3 class="h5 fw-bold mb-3">Werkgebied</h3>
+                        <p>Wij zijn actief in Valkenswaard en omgeving, waaronder:</p>
+                        <p>Dommelen, Bergeijk, Riethoven, Westerhoven, Leende, Heeze, Waalre, Eindhoven, Veldhoven, Eersel</p>
+                        <div class="social-links mt-3">
+                            <a href="https://wa.me/31650204139" class="text-white me-3" target="_blank" aria-label="WhatsApp">
+                                <i class="fab fa-whatsapp fa-lg"></i>
+                            </a>
+                            <a href="https://www.facebook.com/p/RDP-Stukadoorsbedrijf-61554694059613" class="text-white me-3" target="_blank" aria-label="Facebook">
+                                <i class="fab fa-facebook-f fa-lg"></i>
+                            </a>
+                            <a href="https://www.google.nl/search?q=Ruud+de+Proost+Stukadoorsbedrijf+Reviews" class="text-white" target="_blank" aria-label="Google Reviews">
+                                <i class="fab fa-google fa-lg"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <hr class="my-4">
+                
+                <div class="row">
+                    <div class="col-md-6">
+                        <p class="mb-md-0">&copy; <span id="year">2025</span> RDP Stukadoorsbedrijf. Alle rechten voorbehouden.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p class="mb-0"><a href="#" class="text-white text-decoration-none">Privacybeleid</a> | <a href="#" class="text-white text-decoration-none">Algemene Voorwaarden</a></p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Bootstrap JS -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Lightbox JS -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.5/js/lightbox-plus-jquery.min.js"></script>
+        <!-- Custom JS -->
+        <script>
+            // Set current year in footer
+            document.getElementById('year').textContent = new Date().getFullYear();
+            
+            // Active nav link
+            document.addEventListener('DOMContentLoaded', function() {
+                const sections = document.querySelectorAll('section');
+                const navLinks = document.querySelectorAll('.nav-link');
+                
+                window.addEventListener('scroll', function() {
+                    let current = '';
+                    
+                    sections.forEach(section => {
+                        const sectionTop = section.offsetTop;
+                        const sectionHeight = section.clientHeight;
+                        
+                        if (pageYOffset >= (sectionTop - 200)) {
+                            current = section.getAttribute('id');
+                        }
+                    });
+                    
+                    navLinks.forEach(link => {
+                        link.classList.remove('active');
+                        if (link.getAttribute('href').substring(1) === current) {
+                            link.classList.add('active');
+                        }
+                    });
+                });
+            });
+            
+            // Form submission placeholder (to be replaced with actual form handling)
+            const contactForm = document.getElementById('contactForm');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Bedankt voor uw bericht! We nemen zo spoedig mogelijk contact met u op.');
+                    contactForm.reset();
+                });
+            }
+        </script>
+    </body>
 </html>
